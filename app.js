@@ -25,7 +25,7 @@ if(isHashPresent()) {
     			var url = data.images.thumbnail.url;
     			var imageEl = $('<img src="' + url +'" />');
 
-          $.panelslider($('#my-link'));
+          $panelslider();
     			$('#my-panel').append(imageEl);
     		})
     	}
