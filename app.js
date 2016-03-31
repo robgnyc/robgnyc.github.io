@@ -9,7 +9,7 @@ function isHashPresent() {
 if(isHashPresent()) {
   $('.sign-in-view').hide();
     var accessToken = window.location.hash.replace('#access_token=', '');
-    var url = 'https://api.instagram.com/v1/tags/newyork/media/recent?access_token=' + accessToken;
+    var url = 'https://api.instagram.com/v1/users/self/media/recent/?access_token=' + accessToken;
 
     $.ajax( {
     	url: url,
