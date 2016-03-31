@@ -20,12 +20,13 @@ if(isHashPresent()) {
     		var data = response.data;
 
         console.log(data);
+        $.panelslider($('#my-panel'));
 
     		data.forEach(function(data) {
     			var url = data.images.thumbnail.url;
     			var imageEl = $('<img src="' + url +'" />');
 
-          $panelslider();
+          
     			$('#my-panel').append(imageEl);
     		})
     	}
