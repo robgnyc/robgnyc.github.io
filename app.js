@@ -8,14 +8,6 @@ function isHashPresent() {
 
 if(isHashPresent()) {
   $('.sign-in-view').hide();
-
- 
-    var lat = pos.coords.latitude;
-    var long = pos.coords.longitude;
-    
-    // var url = "https://api.instagram.com/tags/nofilter/media/recent?access_token=" + accessToken;
-    // var url = url + "&lat=" + lat;
-    // var url = url + "&lng=" + long;
     var accessToken = window.location.hash.replace('#access_token=', '');
     var url = 'https://api.instagram.com/v1/tags/newyork/media/recent?access_token=' + accessToken;
 
