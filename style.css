@@ -21,4 +21,5 @@ body.ps-active {
   height: 100%;  /* remember to set 100% height for all its parents too, including html and body */
   background-color: #eee;
   transform: translateX(-200px);
+  overflow: scroll;
 }
