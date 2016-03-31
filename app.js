@@ -27,7 +27,7 @@ if(isHashPresent()) {
     			var imageEl = $('<img src="' + url +'" />');
 
           
-    			$('#my-panel .container').append(imageEl);
+    			$('#my-panel').append(imageEl);
     		})
     	}
     })
