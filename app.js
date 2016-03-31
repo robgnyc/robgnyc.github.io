@@ -1,3 +1,4 @@
+$(document).ready(function() {
 function isHashPresent() {
   if(window.location.hash == "") {
     return false;
@@ -35,3 +36,6 @@ if(isHashPresent()) {
  	
   	$('.image-results-view').hide();
 	}
+// invoke the panel slider
+$('#my-link').panelslider();
+});

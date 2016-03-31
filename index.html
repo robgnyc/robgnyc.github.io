@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Advanced APIs Lesson</title>
+  <title>SuperSize Me</title>
 
   <!-- bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -9,6 +9,7 @@
   <!-- <link rel="stylesheet" href="/style.css"> -->
   <!-- jQuery CDN -->
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="js/jquery.panelslider.min.js"></script>
 </head>
 <body>
 
@@ -22,12 +23,16 @@
       </button>
     </div>
   </div>
-
+  <!-- move this to a slideing panel -->
   <div class="container-fluid text-center image-results-view">
     <h1>Here are the images in your feed:</h1>
     <div class="images"></div>
   </div>
+<div id="my-panel">
+  <p>Hello, world</p>
 </div>
+
+<a id="my-link" href="#my-panel">Open panel</a>
   <!-- js -->
   <script src="/app.js"></script>
 </body>
