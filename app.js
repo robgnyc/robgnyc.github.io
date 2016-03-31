@@ -20,7 +20,7 @@ if(isHashPresent()) {
     		var data = response.data;
 
         console.log(data);
-        panelslider($('#my-link'));
+        $.panelslider($('#my-link'));
 
     		data.forEach(function(data) {
     			var url = data.images.thumbnail.url;
@@ -39,5 +39,4 @@ if(isHashPresent()) {
   	$('.image-results-view').hide();
 	}
 // invoke the panel slider
-$('#my-link').panelslider();
 });
