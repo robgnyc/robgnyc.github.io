@@ -20,7 +20,7 @@ if(isHashPresent()) {
     		var data = response.data;
 
         console.log(data);
-        $.panelslider($('#my-panel'));
+        $.panelslider($('#my-link'));
 
     		data.forEach(function(data) {
     			var url = data.images.thumbnail.url;
