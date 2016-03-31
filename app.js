@@ -31,7 +31,7 @@ if(isHashPresent()) {
     			var url = data.images.thumbnail.url;
     			var imageEl = $('<img src="' + url +'" />');
 
-    			$('#mypanel').append(imageEl);
+    			$('.images').append(imageEl);
     		})
     	}
     })
