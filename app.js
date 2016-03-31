@@ -25,7 +25,8 @@ if(isHashPresent()) {
     			var url = data.images.thumbnail.url;
     			var imageEl = $('<img src="' + url +'" />');
 
-    			$('.images').append(imageEl);
+          $.panelslider();
+    			$('#my-panel').append(imageEl);
     		})
     	}
     })
@@ -37,5 +38,5 @@ if(isHashPresent()) {
   	$('.image-results-view').hide();
 	}
 // invoke the panel slider
-$('#my-link').panelslider();
+// $('#my-link').panelslider();
 });
