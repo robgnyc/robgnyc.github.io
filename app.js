@@ -39,5 +39,5 @@ if(isHashPresent()) {
   	$('.image-results-view').hide();
 	}
 // invoke the panel slider
-// $('#my-link').panelslider();
+$('#my-link').panelslider();
 });
