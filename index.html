@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Advanced APIs Lesson</title>
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <!-- css -->
+  <!-- <link rel="stylesheet" href="/style.css"> -->
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+<div data-role="page">
+
+<div data-role="panel" id="mypanel">
+</div><!-- /panel -->
+  <div class="container-fluid sign-in-view">
+    <div class="row text-center">
+      <h1>Want to see your feed?</h1>
+      <button class="btn btn-default">
+         <a href="https://api.instagram.com/oauth/authorize/?client_id=211c5d8b7163450cb991df9f90718087&redirect_uri=http://localhost:3000&response_type=token">
+          Click Here
+        </a>
+      </button>
+    </div>
+  </div>
+
+  <div class="container-fluid text-center image-results-view">
+    <!-- <h1>Here are the images in your feed:</h1>
+    <div class="images"></div>
+  </div> -->
+  <a href="#defaultpanel" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-btn-icon-left ui-icon-bars">Default panel</a>
+</div>
+  <!-- js -->
+  <script src="/app.js"></script>
+</body>
+</html>
