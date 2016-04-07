@@ -1,0 +1,104 @@
+/* Style for our header texts
+  * --------------------------------------- */
+  h1{
+    font-size: 5em;
+    font-family: arial,helvetica;
+    color: #fff;
+    margin:0;
+    padding:0;
+  }
+  .intro p{
+    color: #fff;
+  }
+
+  /* Centered texts in each section
+  * --------------------------------------- */
+  .section{
+    text-align:center;
+  }
+
+  .section{
+    background-size: cover;
+  }
+
+  .slide{
+    background-size: cover;
+  }
+
+
+  /* Fixed header and footer.
+  * --------------------------------------- */
+  #header{
+    position:fixed;
+    /*height: 200px;*/
+    display:block;
+    width: 100%;
+    background: #333;
+    z-index:9;
+    text-align:center;
+    color: #f2f2f2;
+    /*padding: 20px 0 0 0;*/
+    transition: all 0.5s ease;
+    height: 0;
+    overflow: auto;
+   
+
+  /* Set our transitions up. */
+  -webkit-transition: height 0.8s;
+  -moz-transition: height 0.8s;
+  transition: height 0.8s;
+  }
+
+  #header.active {
+    height: 400px;
+    
+  }
+
+  #header{
+    top:0px;
+  }
+  #footer{
+    bottom:0px;
+  }
+
+  button {
+    padding: 9px 18px;
+    background: rgba(255,255,255, 0.6);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+
+  }
+
+  #infoMenu {
+    bottom: 80px;
+  }
+  #infoMenu li a {
+    color: #fff;
+    z-index: 999;
+  }
+
+  .thumb {
+    margin: 20px;
+    float: left;
+    display: block;
+    border: 2px solid #fff;
+    cursor: pointer;
+  }
+
+  .thumb:hover {
+  border: 2px solid orange;
+}
+
+  .thumb.active {
+    opacity: .5;
+  -webkit-filter: grayscale(100%);
+       -moz-filter: grayscale(100%);
+         -o-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+            filter: grayscale(100%); 
+  border: 2px solid transparent;
+  transition: all 0.5s ease;
+}
