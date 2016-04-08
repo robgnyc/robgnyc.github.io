@@ -79,7 +79,7 @@ if(isHashPresent()) {
       $.fn.fullpage.destroy('');
 
       // this will clear out the div even if we just deleted the last image
-      $('#section1').replaceWith('<div class="section active" id="section1"><h1>Add an images</h1>');
+      $('#section1').replaceWith('<div class="section active" id="section1"><h1>Add some images!</h1>');
 
 
         var values = results.val();
