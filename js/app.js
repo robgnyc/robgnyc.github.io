@@ -142,10 +142,10 @@ $(document).on('click', '.slide, .oneslide', function(e) {
            
             $('#header').removeClass("active");
             var imgID = $(this).data("id");
-            mscConfirm("Delete?",function(){
+            // mscConfirm("Delete?",function(){
             deleteImg(imgID);
             $('#header').addClass("active");
-            });
+            // });
            
           })
 
