@@ -80,7 +80,7 @@ if(isHashPresent()) {
 
          $("#section1").empty();
           
-         $( "div#section1" ).replaceWith('<div class="section">');
+         // $( "div#section1" ).replaceWith('<div class="section" id="section1" data-id="' + key + '"style="background-image: url(' + image.src + ')">
 
         var values = results.val();
         
@@ -142,10 +142,10 @@ $(document).on('click', '.slide, .oneslide', function(e) {
            
             $('#header').removeClass("active");
             var imgID = $(this).data("id");
-            // mscConfirm("Delete?",function(){
+            mscConfirm("Delete?",function(){
             deleteImg(imgID);
             $('#header').addClass("active");
-            // });
+            });
            
           })
 
