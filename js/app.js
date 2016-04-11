@@ -80,7 +80,7 @@ if(isHashPresent()) {
 
          $("#section1").empty();
           
-
+         $( "div#section1" ).replaceWith('<div class="section">');
 
         var values = results.val();
         
