@@ -98,12 +98,12 @@ if(isHashPresent()) {
 
         // have to take a different approach if only one image and make slide background of section rather than add a slide to section
 
-        if (numImages == 0) {
-        // this will clear out the div even if we just deleted the last image
-        $('#section1').replaceWith('<div class="section active" id="section1"><h1>Add some images!</h1>');
+        // if (numImages == 0) {
+        // // this will clear out the div even if we just deleted the last image
+        // $('#section1').replaceWith('<div class="section active" id="section1"><h1>Add some images!</h1>');
 
-        }
-          else if (numImages == 1) {
+        // }
+          if (numImages<2) {
             // console.log(numImages);
           $( "div#section1" ).replaceWith('<div class="section oneslide" id="section1" data-id="' + key + '"style="background-image: url(' + image.src + ')">');
           } 
