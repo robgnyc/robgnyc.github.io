@@ -78,7 +78,8 @@ if(isHashPresent()) {
       
       $.fn.fullpage.destroy('');
 
-      
+         $( "div#section1" ).replaceWith('<div class="section">');
+          } 
 
 
         var values = results.val();
