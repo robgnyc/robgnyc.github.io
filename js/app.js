@@ -103,7 +103,7 @@ if(isHashPresent()) {
         $('#section1').replaceWith('<div class="section active" id="section1"><h1>Add some images!</h1>');
 
         }
-          elseif (numImages == 1) {
+          else if (numImages == 1) {
             // console.log(numImages);
           $( "div#section1" ).replaceWith('<div class="section oneslide" id="section1" data-id="' + key + '"style="background-image: url(' + image.src + ')">');
           } 
