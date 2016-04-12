@@ -78,7 +78,7 @@ if(isHashPresent()) {
       
       $.fn.fullpage.destroy('all');
 
-         $("#section1").remove();
+         $("#section1").empty();
           
          // $( "div#section1" ).replaceWith('<div class="section" id="section1" data-id="' + key + '"style="background-image: url(' + image.src + ')">
 
@@ -93,6 +93,7 @@ if(isHashPresent()) {
 
         x = numImages;
 
+        console.log(x);
 
        
         var image = values[key];
