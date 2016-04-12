@@ -112,7 +112,7 @@ if(isHashPresent()) {
 
         // have to take a different approach if only one image and make slide background of section rather than add a slide to section
 
-        if (numImages<2) {
+        if (x<2) {
             // console.log(numImages);
           $( "div#section1" ).replaceWith('<div class="section oneslide" id="section1" data-id="' + key + '"style="background-image: url(' + image.src + ')">');
           } 
