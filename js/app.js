@@ -93,7 +93,7 @@ if(isHashPresent()) {
           
          if (x == 0) {
 
-          $( "div#section1" ).replaceWith('<div id="section1" class="section oneslide">');
+          $( "div#section1" ).replaceWith('<div id="section1" class="section oneslide"><h1>Add some slides</h1>');
         }
 
         var values = results.val();
