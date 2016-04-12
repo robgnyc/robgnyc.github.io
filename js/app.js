@@ -78,7 +78,7 @@ if(isHashPresent()) {
       
       $.fn.fullpage.destroy('all');
 
-         $("#section1").empty();
+         $("#section1").remove();
           
          // $( "div#section1" ).replaceWith('<div class="section" id="section1" data-id="' + key + '"style="background-image: url(' + image.src + ')">
 
