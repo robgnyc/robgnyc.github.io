@@ -125,7 +125,7 @@ if(isHashPresent()) {
           $('*[data-id="' + thumbID + '"]').addClass("active");
         
 
-        });
+        };
            
 
 
