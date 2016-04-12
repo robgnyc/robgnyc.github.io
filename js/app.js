@@ -76,7 +76,7 @@ if(isHashPresent()) {
 
     fireb.child('images').on('value', function(results) {
       
-      $.fn.fullpage.destroy('');
+      $.fn.fullpage.destroy('all');
 
          $("#section1").empty();
           
