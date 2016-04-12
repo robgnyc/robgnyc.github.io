@@ -74,6 +74,10 @@ if(isHashPresent()) {
      var x = 0;
      // console.log(x);
 
+      
+
+    fireb.child('images').on('value', function(results) {
+
       //new code to test number of images
         var ref = fireb.child('images');
         ref.once("value", function(snapshot) {
@@ -83,8 +87,6 @@ if(isHashPresent()) {
 
         console.log(x);
       })
-
-    fireb.child('images').on('value', function(results) {
       
       $.fn.fullpage.destroy('all');
 
