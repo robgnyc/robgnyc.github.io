@@ -88,7 +88,7 @@ if(isHashPresent()) {
         var numImages = snapshot.numChildren();
 
         x = numImages;
-        console.log(x);
+        
         
       })
       
