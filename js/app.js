@@ -1,4 +1,8 @@
 $(document).ready(function() {
+
+// set variable for number of images
+var x = 0;
+
 function isHashPresent() {
   if(window.location.hash == "") {
     return false;
@@ -71,7 +75,7 @@ if(isHashPresent()) {
           });
 
   function getImages() {
-     var x = 0;
+     
     
 
       
