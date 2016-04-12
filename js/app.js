@@ -150,12 +150,15 @@ if(isHashPresent()) {
   // delete action
 $(document).on('click', '.slide, .oneslide', function(e) {
            
+           if (x>0) {
+
             $('#header').removeClass("active");
             var imgID = $(this).data("id");
             // mscConfirm("Delete?",function(){
             deleteImg(imgID);
             // $('#header').addClass("active");
             // });
+          }
            
           })
 
