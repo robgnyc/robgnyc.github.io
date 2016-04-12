@@ -102,7 +102,7 @@ if(isHashPresent()) {
 
         if (x == 0) {
 
-          $( "div#section1" ).replaceWith('<div class="section oneslide">');
+          $( "div#section1" ).replaceWith('<div id="section1">');
         }
 
         // have to take a different approach if only one image and make slide background of section rather than add a slide to section
