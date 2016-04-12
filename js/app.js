@@ -72,7 +72,9 @@ if(isHashPresent()) {
 
   function getImages() {
      var x = 0;
-     //new code to test number of images
+     // console.log(x);
+
+      //new code to test number of images
         var ref = fireb.child('images');
         ref.once("value", function(snapshot) {
         var numImages = snapshot.numChildren();
@@ -80,6 +82,7 @@ if(isHashPresent()) {
         x = numImages;
 
         console.log(x);
+      }
 
     fireb.child('images').on('value', function(results) {
       
@@ -93,8 +96,15 @@ if(isHashPresent()) {
         
         for(var key in values) {
           
-         
+          //new code to test number of images
+        var ref = fireb.child('images');
+        ref.once("value", function(snapshot) {
+        var numImages = snapshot.numChildren();
 
+        x = numImages;
+
+        console.log(x);
+      }
        
         var image = values[key];
 
@@ -120,7 +130,7 @@ if(isHashPresent()) {
 
 
         
-        }
+        
         // console.log(x-1);
          $('#fullpage').fullpage({
         // anchors: ['firstPage'],
