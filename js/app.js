@@ -82,7 +82,7 @@ if(isHashPresent()) {
         x = numImages;
 
         console.log(x);
-      }
+      })
 
     fireb.child('images').on('value', function(results) {
       
@@ -97,14 +97,14 @@ if(isHashPresent()) {
         for(var key in values) {
           
           //new code to test number of images
-        var ref = fireb.child('images');
-        ref.once("value", function(snapshot) {
-        var numImages = snapshot.numChildren();
+      //   var ref = fireb.child('images');
+      //   ref.once("value", function(snapshot) {
+      //   var numImages = snapshot.numChildren();
 
-        x = numImages;
+      //   x = numImages;
 
-        console.log(x);
-      }
+      //   console.log(x);
+      // }
        
         var image = values[key];
 
