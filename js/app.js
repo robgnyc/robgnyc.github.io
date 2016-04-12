@@ -72,7 +72,7 @@ if(isHashPresent()) {
 
   function getImages() {
      var x = 0;
-     // console.log(x);
+    
 
       
 
@@ -84,29 +84,19 @@ if(isHashPresent()) {
         var numImages = snapshot.numChildren();
 
         x = numImages;
-
-        console.log(x);
+        
       })
       
       $.fn.fullpage.destroy('all');
 
          $("#section1").empty();
           
-         // $( "div#section1" ).replaceWith('<div class="section" id="section1" data-id="' + key + '"style="background-image: url(' + image.src + ')">
+        
 
         var values = results.val();
         
         for(var key in values) {
           
-          //new code to test number of images
-      //   var ref = fireb.child('images');
-      //   ref.once("value", function(snapshot) {
-      //   var numImages = snapshot.numChildren();
-
-      //   x = numImages;
-
-      //   console.log(x);
-      // }
        
         var image = values[key];
 
@@ -150,10 +140,10 @@ $(document).on('click', '.slide, .oneslide', function(e) {
            
             $('#header').removeClass("active");
             var imgID = $(this).data("id");
-            // mscConfirm("Delete?",function(){
+            mscConfirm("Delete?",function(){
             deleteImg(imgID);
-            // $('#header').addClass("active");
-            // });
+            $('#header').addClass("active");
+            });
            
           })
 
