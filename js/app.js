@@ -91,7 +91,10 @@ if(isHashPresent()) {
 
          $("#section1").empty();
           
-        
+         if (x == 0) {
+
+          $( "div#section1" ).replaceWith('<div id="section1">');
+        }
 
         var values = results.val();
         
@@ -100,14 +103,11 @@ if(isHashPresent()) {
        
         var image = values[key];
 
-        if (x == 0) {
-
-          $( "div#section1" ).replaceWith('<div id="section1">');
-        }
+       
 
         // have to take a different approach if only one image and make slide background of section rather than add a slide to section
 
-        else if (x == 1) {
+        if (x == 1) {
             // console.log(numImages);
           $( "div#section1" ).replaceWith('<div class="section oneslide" id="section1" data-id="' + key + '"style="background-image: url(' + image.src + ')">');
           } 
